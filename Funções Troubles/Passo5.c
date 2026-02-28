@@ -14,12 +14,14 @@ typedef struct {
 
 float calcular_media (alunos alunos_A) {
 
-    return (alunos_A.nota1 + alunos_A.nota2) / 2;
+    return (alunos_A.nota1 + alunos_A.nota2) / 2;            //Podemos colocar algumas funções direto no return para otimizar o codigo;
 }
 
 int main () {
 
-    alunos alunos[2];
+    alunos alunos[2];                //Struct com vetor de 2 alunos;
+
+    //Parando para pensar nesse codigo agora, eu poderia fazer uma função pra não ficar digitando isso;
 
     for (int i = 0; i < 2; i++) {
 
@@ -35,7 +37,7 @@ int main () {
 
     for (int j = 0; j < 2; j++) {
 
-        alunos[j].media_aluno = calcular_media(alunos[j]);
+        alunos[j].media_aluno = calcular_media(alunos[j]);            //Chamando e usando a função;
 
             printf ("Numero da matricula: %d\n", alunos[j].matricula);
             printf ("A media do aluno: %.2f\n", alunos[j].media_aluno);
