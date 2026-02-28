@@ -1,11 +1,15 @@
 #include <stdio.h>
 
+//Objetivo aqui é fazer uma função que aplica o desconto a um determinado produto usando struct.
+
 typedef struct {
 
     int codigo;
     float preco;
 
 } Produto;
+
+//Montando uma função para deixar mais bonito no terminal;
 
 void struct_funny () {
 
