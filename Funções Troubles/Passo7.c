@@ -10,7 +10,7 @@ typedef struct {
 
 } produto;
 
-void cadastrar_produtos (produto vetor[], int tamanho) {
+void cadastrar_produtos (produto vetor[], int tamanho) {            //Podemos usar o void para cadastrar o struct com o mesmo endereço de memoria;
 
     for (int i = 0; i < tamanho; i++) {
 
@@ -41,6 +41,8 @@ float ValorTotalEstoque (produto vetor1[], int tamanho) {
 
 int buscar_produto (produto vetor2[], int tamanho, int codigo) {
 
+    //Buscar produto está tendo responsabilidade mais, deveria tratar no main alguns casos, mas ainda não sei como fazer isso;
+
     int controle = 0;
 
     while (controle < tamanho) {
@@ -53,7 +55,7 @@ int buscar_produto (produto vetor2[], int tamanho, int codigo) {
             printf ("A quantidade dele eh: %d\n", vetor2[controle].quantidade);
             printf ("O valor total do produto (Preço * quantidade) é: %.2f\n", total);
 
-            return 1;
+            return 1;                    //Como queremos achar somente 1 produto a função ja pode terminar no return 1;
         }
 
         controle++;
@@ -65,7 +67,7 @@ int buscar_produto (produto vetor2[], int tamanho, int codigo) {
 int main () {
 
     produto produtos[2];
-    int controle = 2;
+    int controle = 2;                        //Usando o switch no codigo, com o while sendo diferente de 0, mas o switch aqui é quase inutil.
 
     cadastrar_produtos(produtos, 2);
     printf ("O valor total do estoque eh: %.2f\n", ValorTotalEstoque(produtos, 2));
