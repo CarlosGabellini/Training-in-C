@@ -13,11 +13,13 @@ typedef struct {
 
 float calcular_salario (funcionario funcionarios) {
 
-    return funcionarios.horas * funcionarios.valor_hora;
+    return funcionarios.horas * funcionarios.valor_hora;            //Aprendi que aqui podemos colocar algumas coisas direto no return;
 }
 
 int digitar_informacoes (char texto[]) {
 
+    //Uma junção de scanf e printf junto com string;
+    
     int informacao;
     printf ("%s\n", texto);
 
@@ -56,9 +58,9 @@ int maior_salario (funcionario funcionarios[], int tamanho) {
 
 int main () {
 
-    funcionario funcionarios[2];
-    int controle = 0;
-    int indice_maior_salario = 0;
+    funcionario funcionarios[2];                             //Struct com 2 funcionarios;
+    int controle = 0;                                        //Variavel para o while;
+    int indice_maior_salario = 0;                            //Calcula o espaço de memoria do vetor pra saber qual funcionario tem o maior salario;
 
     for (int i = 0; i < 2; i++) {
 
