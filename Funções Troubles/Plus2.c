@@ -1,6 +1,8 @@
 #include <stdio.h>
 #define N 2
 
+//O objetivo aqui é fazer um sistema simples de reajuste de salario numa empresa integrando 3 funções e fazendo o programa organizado em blocos;
+
 typedef struct {
     int id;
     float salario;
