@@ -1,6 +1,14 @@
 #include <stdio.h>
 
+/*Aqui a função já é autoexplicativa, basicamente queremos saber como se faz a formula de desvio padrão adaptada
+para codigo.*/
+
 int variavel_global = 4;
+
+/*Usando a raiz quadrada aqui por que usamos raiz quadrada na formula de desvio padrao, eu preferi fazer minha propria
+formula do que pegar a função SQRT pronta, por que os exercicios do meu professor exigem que usemos somente a função
+main como entrada.
+Esse daqui é o algoritmo de Newton-Raphson otimizado para codigo.*/
 
 float raiz_quadrada (float numero1) {
 
