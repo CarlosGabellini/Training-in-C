@@ -1,5 +1,31 @@
     #include <stdio.h>
 
+    /*Escreva uma função que recebe dois números inteiros positivos a e b por parâmetro e
+    determina se eles são amigos ou não, devolvendo 1 caso sejam amigos, e 0 caso contrário.
+
+    Dois números são amigos se cada número é igual à soma dos divisores próprios do outro
+    (os divisores próprios de um número m são os divisores estritamente menores que m).
+    
+    Por exemplo, os divisores próprios de 220 são 1, 2, 4, 5, 10, 11, 20, 22, 44, 55 e 110, cuja soma
+    é 284; e os divisores próprios de 284 são 1, 2, 4, 71 e 142, cuja soma é 220. Logo, 220 e
+    284 são números amigos. O protótipo da função deve ser:
+
+    int amigos(int a, int b);
+
+    para exemplificar melhor:
+
+    Divisores de 220:
+    1, 2, 4, 5, 10, 11, 20, 22, 44, 55 e 110
+
+    Somando isso resulta em 284;
+
+    Divisores de 284:
+
+    1, 2, 4, 71 e 142
+
+    isso resulta em 220.
+    */
+
     int amigos (int numero, int numero2) {
 
         int soma = 1;
