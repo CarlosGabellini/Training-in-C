@@ -48,6 +48,8 @@ int main () {
             for (int percorrer = 0; percorrer < variavel_tamanho; percorrer++) {
 
                 soma += matriz[linha][percorrer] * matriz2[percorrer][coluna];
+
+                //Esse for aqui é o mais importante, basicamente conseguimos fazer a multiplicação nessa parte.
             }
 
             matriz_resposta[linha][coluna] = soma;
