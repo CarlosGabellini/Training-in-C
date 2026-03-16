@@ -1,5 +1,14 @@
 #include <stdio.h>
 
+/*O desafio desse exercicio aqui é saber se um numero é pitagórico ou não criando uma função com 3 parametros, um
+numero é pitagorico quando:
+
+(2*2) + (3*3) = 13;
+
+13 é pitagórico pois as somas de 2 numeros ao quadrado formam este determinado numero, e basicamente este exercicio
+aqui é a implementação de uma função para colocar isso na prática.
+*/
+
 int entrada_saida (char texto[]) {
 
     int numero_digitado;
