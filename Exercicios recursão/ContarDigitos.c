@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+//Função recursiva simples para contar digitos de um determinado número, aprendizado básico.
+
 int contar_digitos (int numero) {
 
     if (numero < 10) {
