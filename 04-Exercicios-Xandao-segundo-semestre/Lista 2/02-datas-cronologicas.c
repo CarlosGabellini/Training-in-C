@@ -63,6 +63,8 @@ void ordena(Ano_Cronologico data_vet[], int tamanho) {
             }
         }
 
+        //Podemos fazer isso por que a struct data_vet ja está preenchida com dados, fizemos isso na função Anos_de_vida;
+
         registro = data_vet[i];
         data_vet[i] = data_vet[indice_menor];
         data_vet[indice_menor] = registro;
