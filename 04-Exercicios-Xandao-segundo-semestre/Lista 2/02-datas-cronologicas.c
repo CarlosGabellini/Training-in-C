@@ -31,10 +31,7 @@ Ano_Cronologico Anos_de_vida () {
 void ordena(Ano_Cronologico data_vet[], int tamanho) {
 
     int indice_menor = 0;
-
-    int registro_ano = 0;
-    int registro_mes = 0;
-    int registro_dia = 0;
+    Ano_Cronologico registro;
 
     //Primeiro ordenando os anos;
 
@@ -48,22 +45,29 @@ void ordena(Ano_Cronologico data_vet[], int tamanho) {
 
                 indice_menor = j;
             }
+
+            else if (data_vet[j].ano == data_vet[indice_menor].ano) {
+
+                if (data_vet[j].mes < data_vet[indice_menor].mes) {
+
+                    indice_menor = j;
+                }
+
+                else if (data_vet[j].mes == data_vet[indice_menor].mes) {
+
+                    if (data_vet[j].dia < data_vet[indice_menor].dia) {
+
+                        indice_menor = j;
+                    }
+                }
+            }
         }
 
-        registro_ano = data_vet[i].ano;
-        registro_mes = data_vet[i].mes;
-        registro_dia = data_vet[i].dia;
+        registro = data_vet[i];
+        data_vet[i] = data_vet[indice_menor];
+        data_vet[indice_menor] = registro;
 
         //Logica bem dificil de fazer, por que se eu alterar o vetor do ano, presciso com que o mês e os dias também fiquem acompanhados;
-
-        data_vet[i].ano = data_vet[indice_menor].ano;
-        data_vet[indice_menor].ano = registro_ano;
-
-        data_vet[i].mes = data_vet[indice_menor].mes;
-        data_vet[indice_menor].mes = registro_mes;
-
-        data_vet[i].dia = data_vet[indice_menor].dia;
-        data_vet[indice_menor].dia = registro_dia;
     }
 }
 
