@@ -21,7 +21,7 @@ void gerar_valores(int *vetor, int tamanho) {
 }
 
 int main () {
-\
+
     int vetor[5];
     int pares = 0;
     int *ponteiro_de_pares = &pares;
