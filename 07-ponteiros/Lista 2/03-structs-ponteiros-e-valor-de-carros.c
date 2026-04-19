@@ -26,7 +26,6 @@ float maior_valor (Carros *maior_preco, int tamanho) {
 void atualizar_preco (Carros *atualiza, int tamanho) {
 
     for (int i = 0; i < tamanho; i++) {
-
         atualiza[i].valor *= 1.04;
     }
 }
@@ -52,7 +51,7 @@ int main () {
 
         printf ("Digite o valor do carro: ");
         scanf ("%f", &(do_brasil + i)->valor);
-        
+
         while ((c = getchar()) != '\n' && c != EOF);        //Limpando o buffer de memoria pra nao ficar armazenado;
 
         printf ("\n");
@@ -63,7 +62,7 @@ int main () {
     atualizar_preco(do_brasil, tamanho_do_vetor);
 
     for (int i = 0; i < tamanho_do_vetor; i++) {
-
+        
         printf ("O valor dos carros: %.2f\n", (do_brasil + i)->valor);
     }
 
