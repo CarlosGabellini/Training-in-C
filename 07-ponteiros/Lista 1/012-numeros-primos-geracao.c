@@ -56,7 +56,7 @@ int main () {
 
     gerar_primos(ponteiro_vetor, tamanho, 2000000);
 
-    printf ("O numero primo na posicao 2004 eh: %d\n", ponteiro_vetor[2008]);
+    printf ("O numero primo na posicao 2004 eh: %d\n", ponteiro_vetor[2004]);
 
     return 0;
 }
