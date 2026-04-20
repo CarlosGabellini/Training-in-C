@@ -45,7 +45,7 @@ int main () {
         //Fazemos o uso das setas aqui por que com elas fica mais facil acessar os campos do vetor, eh melhor do que
         //fazer isso daqui: (*(do_brasil + 1)).modelo_do_carro;
 
-        (do_brasil + i)->modelo_do_carro[strcspn((do_brasil + i)->modelo_do_carro, "\n")] = 0;
+        (do_brasil + i)->modelo_do_carro[strcspn((do_brasil + i)->modelo_do_carro,"\n")] = 0;
 
         //Removendo o \n do fgets;
 
@@ -63,7 +63,7 @@ int main () {
 
     for (int i = 0; i < tamanho_do_vetor; i++) {
         
-        printf ("O valor dos carros: %.2f\n", (do_brasil + i)->valor);
+        printf ("O valor dos carros atualizado depois do reajuste: %.2f\n", (do_brasil + i)->valor);
     }
 
     return 0;
