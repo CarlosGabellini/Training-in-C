@@ -72,8 +72,6 @@ int main() {
 
     printf("O retorno: %d\nMaior primo antes de %d eh %d\n", retorno, number, p1);
     printf("Menor primo DEPOIS de %d eh %d\n", number, p2);
-
-    //Eu sei que o maior primo antes de 404 vai ser 401;
-
+    
     return 0;
 }
